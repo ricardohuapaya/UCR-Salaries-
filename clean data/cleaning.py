@@ -29,30 +29,18 @@ def change_columns(DataFrame, list): #this function renames the columns
         
 #%%% Let's clean what we don't need
 
-print('How many elements do you want out?')
-n = int(input())
-l = []
-
-for i in range(n):
-    print('Type the name of element #', (i+1))
-    h = str(input())
-    l.append(h)
-    
+l= ['MES COMPLETO']
 df = drop_this(df, l)
 
-
-print('Change Column names')
-j = df.columns
-n = len(j)
-l = []
-for i in range(n):
-    print('Type the new names #', i+1)
-    h = str(input())
-    l.append(h)
-
+l=['position',
+   'salary',
+   'hours',
+   'years',
+   'respon']
 df = change_columns(df, l)
 df = df.fillna('No aplica')
 
+df['salary/1000'] = df.salary/1000
 #%%% Let's fix what we need
 
 #Hours_range

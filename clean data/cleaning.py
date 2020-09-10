@@ -40,7 +40,7 @@ l=['position',
 df = change_columns(df, l)
 df = df.fillna('No aplica')
 
-df['salary/1000'] = df.salary/1000
+df['salary/1000'] = df.salary/1000 #salary in thousands of colones
 #%%% Let's fix what we need
 
 #Hours_range
@@ -58,7 +58,7 @@ hours_label = ['1/8 de tiempo',
 df.hours = pd.cut(df['hours'], hours_bins, labels = hours_label)
 
 #Salary_percentile
-df['sal_qcut'] = pd.qcut(df.salary, 10) 
+df['sal_qcut'] = pd.qcut(df.salary, 10) # salary in deciles
 
 #years 
 year_bins = [-np.inf,10, 20, 30, 40 ,50, np.inf]
@@ -73,3 +73,30 @@ df['time'] = '2020-08-01'
 #%% import
 
 df.to_csv('planilla_clean.csv', index = False)
+
+#%% understand the new data 
+
+#FIX the position data!
+
+df.loc[df['position'].str.contains('VISITANTE'), 'position'] = 'PROFESOR VISITANTE'
+df.loc[df['position'].str.contains('INVITADO|INV.'), 'position'] = 'PROFESOR VISITANTE'
+df.loc[df['position'].str.contains('EXBECARIO | POSDOCTORADO'), 'position'] = 'PROFESOR EXBECARIO'
+df.loc[df['position'].str.contains('EDUCACION SUPERIOR'), 'position'] = 'PROFESOR EDUCACION SUPERIOR'
+df.loc[df['position'].str.contains('EDUCACION SUPERIOR'), 'position'] = 'PROFESOR EDUCACION SUPERIOR'
+df.loc[df['position'].str.contains('CATEDRATICO'), 'position'] = 'PROFESOR CATEDRATICO'
+df.loc[df['position'].str.contains('CATEDRATICO'), 'position'] = 'PROFESOR CATEDRATICO'
+
+#%% import new positions
+
+planilla_profesores = df.loc[df['position'].str.contains('PROFESOR')]
+planilla_profesores = planilla_profesores.reset_index(drop = True)
+planilla_profesores.to_csv('planilla_profesores .csv', index = False)
+
+#%%% slip respon
+glue = df
+glue.loc[~glue['respon'].str.contains('PUESTO NO'), 'respon'] = 'ADMINISTRATIVO'
+
+#%% import dichotomy
+
+glue.to_csv('dichotomy_planilla.csv', index = False)
+

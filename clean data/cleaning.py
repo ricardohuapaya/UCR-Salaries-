@@ -5,13 +5,17 @@ Created on Sun Sep  6 21:00:37 2020
 @author: Ricardo 
 """
 #The main idea is to clean all the data
-import pandas as pd 
-import numpy as np
-df = pd.read_csv('planilla-2020-08.csv', sep =';')
-print(df.columns)
 
-#%%% Functions
-def drop_this (DataFrame, list): #this function drops columns you don't need
+import pandas as pd
+import numpy as np
+
+#create a data frame with the data from UCR salaries information
+
+df = pd.read_csv('planilla-2020-08.csv', sep =';')
+
+#%% Craeting Functions to then apply them in a pipe
+
+def drop_this (DataFrame, list): #this function will help you drops columns you don't need
     try:
         DataFrame2 = DataFrame.drop(columns = list)
         print('Elements dropped')
@@ -20,7 +24,7 @@ def drop_this (DataFrame, list): #this function drops columns you don't need
     except KeyError:
         print('This name is not in the DataFrame')
                 
-def change_columns(DataFrame, list): #this function renames the columns
+def change_columns(DataFrame, list): #this function renames ALL the columns in the data frame using a list 
     try: 
         DataFrame.columns = list
         return DataFrame
@@ -29,18 +33,31 @@ def change_columns(DataFrame, list): #this function renames the columns
         
 #%%% Let's clean what we don't need
 
-l= ['MES COMPLETO']
-df = drop_this(df, l)
 
-l=['position',
+#view the date frame 
+
+print(df.head())
+#-> we see we dont need the column MES COMPLETO so we put in the next list.
+column_to_drop= ['MES COMPLETO']
+
+#view the name of each column
+
+print(df.columns)
+#-> we can see the names and how can we rename them so we put the new names in a list.
+new_column_names=['position',
    'salary',
    'hours',
    'years',
-   'respon']
-df = change_columns(df, l)
-df = df.fillna('No aplica')
+   'type_job']
 
-df['salary/1000'] = df.salary/1000 #salary in thousands of colones
+#apply pipe
+
+(df.pipe(drop_this, column_to_drop)
+ .pipe(change_columns, new_column_names)
+)
+
+df['salary_thousands'] = df.salary/1000 #salary in thousands of colones
+
 #%%% Let's fix what we need
 
 #Hours_range
@@ -58,17 +75,22 @@ hours_label = ['1/8 de tiempo',
 df.hours = pd.cut(df['hours'], hours_bins, labels = hours_label)
 
 #Salary_percentile
-df['sal_qcut'] = pd.qcut(df.salary, 10) # salary in deciles
 
-#years 
+df['salary_decil'] = pd.qcut(df.salary, 10) # create a colum that puts the salary in deciles. 
+
+#years_range
+
 year_bins = [-np.inf,10, 20, 30, 40 ,50, np.inf]
-df['years_cut'] = pd.cut(df['years'], year_bins)
+df['year_cut_in_10'] = pd.cut(df['years'], year_bins)
 
 #drop missing values
-df = df.dropna()
-#%%% add
 
-df['time'] = '2020-08-01'
+df = df.dropna()
+
+#%%% add a date for the data fram for future comparison
+
+
+df['date'] = '2020-08-01'
 
 #%% import
 
@@ -76,7 +98,7 @@ df.to_csv('planilla_clean.csv', index = False)
 
 #%% understand the new data 
 
-#FIX the position data!
+#FIX the position data so we can understan better each teaching postiton
 
 df.loc[df['position'].str.contains('VISITANTE'), 'position'] = 'PROFESOR VISITANTE'
 df.loc[df['position'].str.contains('INVITADO|INV.'), 'position'] = 'PROFESOR VISITANTE'
@@ -86,13 +108,14 @@ df.loc[df['position'].str.contains('EDUCACION SUPERIOR'), 'position'] = 'PROFESO
 df.loc[df['position'].str.contains('CATEDRATICO'), 'position'] = 'PROFESOR CATEDRATICO'
 df.loc[df['position'].str.contains('CATEDRATICO'), 'position'] = 'PROFESOR CATEDRATICO'
 
-#%% import new positions
+#%% import new data fram that only containts the teachers data
 
 planilla_profesores = df.loc[df['position'].str.contains('PROFESOR')]
 planilla_profesores = planilla_profesores.reset_index(drop = True)
 planilla_profesores.to_csv('planilla_profesores .csv', index = False)
 
-#%%% slip respon
+#%%% split the data frame bewtweentheacher and non-teachers
+
 glue = df
 glue.loc[~glue['respon'].str.contains('PUESTO NO'), 'respon'] = 'ADMINISTRATIVO'
 

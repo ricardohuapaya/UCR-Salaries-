@@ -52,7 +52,7 @@ new_column_names=['position',
 
 #apply pipe
 
-(df.pipe(drop_this, column_to_drop)
+df = (df.pipe(drop_this, column_to_drop)
  .pipe(change_columns, new_column_names)
 )
 
@@ -117,7 +117,7 @@ planilla_profesores.to_csv('planilla_profesores .csv', index = False)
 #%%% split the data frame bewtweentheacher and non-teachers
 
 glue = df
-glue.loc[~glue['respon'].str.contains('PUESTO NO'), 'respon'] = 'ADMINISTRATIVO'
+glue.loc[~glue['type_job'].str.contains('PUESTO NO'), 'type_job'] = 'ADMINISTRATIVO'
 
 #%% import dichotomy
 

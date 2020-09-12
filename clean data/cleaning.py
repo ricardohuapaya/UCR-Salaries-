@@ -56,21 +56,21 @@ df = (df.pipe(drop_this, column_to_drop)
  .pipe(change_columns, new_column_names)
 )
 
-df['salary_thousands'] = df.salary/1000 #salary in thousands of colones
+df['salary_millions'] = df.salary/1000000 #salary in millions of colones
 
 #%%% Let's fix what we need
 
 #Hours_range
 
 hours_bins = [0, 0.125, 0.25,0.375, 0.50, 0.625, 0.75, 0.875, 1.]
-hours_label = ['1/8 de tiempo', 
-               '1/4 de tiempo',
-               '3/8 de tiempo', 
-               '1/2 tiempo',
-               '5/8 de tiempo', 
-               '3/4 de tiempo',
-               '7/8 de tiempo',
-               'Tiempo Completo']
+hours_label = ['1/8  of time', 
+               '1/4 of  time',
+               '3/8 of time', 
+               'Part Time',
+               '5/8 of time', 
+               '3/4 of time',
+               '7/8 of time',
+               'Full time']
 
 df.hours = pd.cut(df['hours'], hours_bins, labels = hours_label)
 

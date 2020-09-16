@@ -74,9 +74,20 @@ hours_label = ['1/8  of time',
 
 df.hours = pd.cut(df['hours'], hours_bins, labels = hours_label)
 
-#Salary_percentile
+#Salary_per_hour. 
+""" The main idea is create a column with the value of the hour of work for everyone so it's easier to compare how much everyone earns """
 
-df['salary_decil'] = pd.qcut(df.salary, 10) # create a colum that puts the salary in deciles. 
+#asume that in  1 month there is 4.34524 weeks
+
+df['Salary_per_hour'] = df.salary/4.34524
+df.loc[df['hours']=='Full time', 'Salary_per_hour'] = df.Salary_per_hour/40 
+df.loc[df['hours']=='7/8 of time', 'Salary_per_hour'] = df.Salary_per_hour/(40*7/8) 
+df.loc[df['hours']=='3/4 of time', 'Salary_per_hour'] = df.Salary_per_hour/(40*6/8)
+df.loc[df['hours']=='5/8 of time', 'Salary_per_hour'] = df.Salary_per_hour/(40*5/8) 
+df.loc[df['hours']=='Part Time', 'Salary_per_hour'] = df.Salary_per_hour/(40*4/8)
+df.loc[df['hours']=='3/8 of time', 'Salary_per_hour'] = df.Salary_per_hour/(40*3/8)
+df.loc[df['hours']=='1/4 of  time', 'Salary_per_hour'] = df.Salary_per_hour/(40*2/8)
+df.loc[df['hours']=='1/8  of time', 'Salary_per_hour'] = df.Salary_per_hour/(40*1/8)
 
 #years_range
 
@@ -88,7 +99,6 @@ df['year_cut_in_10'] = pd.cut(df['years'], year_bins)
 df = df.dropna()
 
 #%%% add a date for the data fram for future comparison
-
 
 df['date'] = '2020-08-01'
 

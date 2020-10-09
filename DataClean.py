@@ -1,4 +1,4 @@
-#The main idea is to clean all the data
+#Data Clean
 
 import pandas as pd
 import numpy as np
@@ -102,16 +102,16 @@ df['year_cut_in_10'] = pd.cut(df['years'], year_bins, labels =year_label)
 
 df = df.dropna()
 
-#%%% add a date for the data fram for future comparison
+#%%% Tiers
+df['position'].count()
 
+df.loc[df['position'].str.contains('ESCUELA'), 'position'] = 'ESCUELA'
+df.loc[df['position'].str.contains('DIRECTOR'), 'position'] = 'DIRECTOR'
+df.loc[df['position'].str.contains('CONSEJO'), 'position'] = 'CONSEJO UNIVERSITARIO'
 
-
-df['date'] = '2020-08-01'
-
-#%% import
-df.to_csv('planilla_clean.csv', index = False)
-
-#%% understand the new data 
+df.loc[df['position'].str.contains('ESCUELA'), 'position'] = 'DIRECTOR ESCUELA'
+#%%% split the data frame bewtweentheacher and non-teachers
+df.loc[~df['type_job'].str.contains('PUESTO NO'), 'type_job'] = 'ADMINISTRATIVO'
 
 #FIX the position data so we can understan better each teaching postiton
 
@@ -124,16 +124,8 @@ df.loc[df['position'].str.contains('CATEDRATICO'), 'position'] = 'PROFESOR CATED
 df.loc[df['position'].str.contains('CATEDRATICO'), 'position'] = 'PROFESOR CATEDRATICO'
 
 #%% import new data fram that only containts the teachers data
+df.to_csv('planilla_clean.csv', index = False)
 
 planilla_profesores = df.loc[df['position'].str.contains('PROFESOR')]
 planilla_profesores = planilla_profesores.reset_index(drop = True)
 planilla_profesores.to_csv('planilla_profesores .csv', index = False)
-
-#%%% split the data frame bewtweentheacher and non-teachers
-
-glue = df
-glue.loc[~glue['type_job'].str.contains('PUESTO NO'), 'type_job'] = 'ADMINISTRATIVO'
-
-#%% import dichotomy
-
-glue.to_csv('dichotomy_planilla.csv', index = False)

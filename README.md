@@ -53,17 +53,17 @@ Mean of tier of employees
 | JEFE B                  | 22 222.46       | 26.54            | 33                    |
 | PROFESIONAL A           | 10 565.64       | 16.26            | 419                   |
 | PROFESIONAL B           | 12 177.31       | 15.17            | 347                   |
-| PROFESIONAL C           | 14607.70        | 17.35            | 251                   |
-| PROFESIONAL D           | 17937.24        | 21.71            | 32                    |
-| TECNICO ASISTENCIAL A   | 5318.93         | 12.19            | 478                   |
-| TECNICO ASISTENCIAL B   | 6204.86         | 14.22            | 452                   |
-| TECNICO ESPECIALIZADO A | 6582.37         | 14.72            | 84                    |
-| TECNICO ESPECIALIZADO B | 6914.99         | 14.84            | 422                   |
-| TECNICO ESPECIALIZADO C | 7639.56         | 15.13            | 93                    |
-| TECNICO ESPECIALIZADO D | 8556.81         | 16.81            | 428                   |
-| TRABAJADOR OPERATIVO A  | 4630.86         | 11.00            | 95                    |
-| TRABAJADOR OPERATIVO B  | 5047.77         | 13.08            | 368                   |
-| TRABAJADOR OPERATIVO C  | 6745.08         | 13.82            | 418                   |
+| PROFESIONAL C           | 14 607.70        | 17.35            | 251                   |
+| PROFESIONAL D           | 17 937.24        | 21.71            | 32                    |
+| TECNICO ASISTENCIAL A   | 53 18.93         | 12.19            | 478                   |
+| TECNICO ASISTENCIAL B   | 6 204.86         | 14.22            | 452                   |
+| TECNICO ESPECIALIZADO A | 6 582.37         | 14.72            | 84                    |
+| TECNICO ESPECIALIZADO B | 6 914.99         | 14.84            | 422                   |
+| TECNICO ESPECIALIZADO C | 7 639.56         | 15.13            | 93                    |
+| TECNICO ESPECIALIZADO D | 8 556.81         | 16.81            | 428                   |
+| TRABAJADOR OPERATIVO A  | 4 630.86         | 11.00            | 95                    |
+| TRABAJADOR OPERATIVO B  | 5 047.77         | 13.08            | 368                   |
+| TRABAJADOR OPERATIVO C  | 6 745.08         | 13.82            | 418                   |
 
 **Tier 3**
 

@@ -1,4 +1,3 @@
-# SALARIOS UCR
 # Universidad de Costa Rica Salaries: an Exploratory Analysis.
 ## General Information
 The main objetive of this program is to properly understand how the Universidad de Costa Rica, a public and State fundened college, distribuites it's budget to the salaries paied to their employees.
@@ -22,6 +21,8 @@ Summary of aggregate data of all the employees
 
 Mean of tier of employees
 
+*Tier One*
+
 | Position              | Mean Salary per Hour | Mean Years of service | Quantity of employees |
 |-----------------------|-----------------|------------------|-----------------------|
 | RECTOR                | 37 750.82       | 24.00            | 1                     |
@@ -33,7 +34,8 @@ Mean of tier of employees
 | CONTRALOR             | 31 503.20       | 31.00            | 1                     |
 | SUBCONTRALOR          | 23 048.19       | 16.00            | 1                     |
 
-TIER 2
+*Tier Two*
+
 | Position                | Salary per Hour | Years of service | Quantity of employees |
 |-------------------------|-----------------|------------------|-----------------------|
 | JEFE A                  | 19 943.41       | 26.16            | 48                    |

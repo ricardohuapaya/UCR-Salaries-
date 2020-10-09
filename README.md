@@ -19,9 +19,20 @@ Summary of aggregate data of all the employees
 | Median   | 1.720855                      | 11               |
 | Skewness | 1.30                          | 0.78             |
 
+
+Aggregagted Summary of Teachers
+
+|          | Salary in Millions of colones | Years of service |
+|----------|-------------------------------|------------------|
+| Min      | 0.006712                      | 0                |
+| Max      | 9.891736                      | 56               |
+| Mean     | 1.144469                       | 10.38            |
+| Median   | 0.623217                     | 8               |
+| Skewness |  1.78                           | 1.13             |
+
 Mean of tier of employees
 
-*Tier One*
+**Tier One**
 
 | Position              | Mean Salary per Hour | Mean Years of service | Quantity of employees |
 |-----------------------|-----------------|------------------|-----------------------|
@@ -34,7 +45,7 @@ Mean of tier of employees
 | CONTRALOR             | 31 503.20       | 31.00            | 1                     |
 | SUBCONTRALOR          | 23 048.19       | 16.00            | 1                     |
 
-*Tier Two*
+**Tier Two**
 
 | Position                | Salary per Hour | Years of service | Quantity of employees |
 |-------------------------|-----------------|------------------|-----------------------|
@@ -53,6 +64,23 @@ Mean of tier of employees
 | TRABAJADOR OPERATIVO A  | 4630.86         | 11.00            | 95                    |
 | TRABAJADOR OPERATIVO B  | 5047.77         | 13.08            | 368                   |
 | TRABAJADOR OPERATIVO C  | 6745.08         | 13.82            | 418                   |
+
+**Tier 3**
+
+| Position                          | Salary per Hour | Years of service | Quantity of employees |
+|-----------------------------------|-----------------|------------------|-----------------------|
+| PROFESOR ADJUNTO                  | 12 662.14       | 17.43            | 167                   |
+| PROFESOR ASOCIADO                 | 16 159.07       | 19.78            | 365                   |
+| PROFESOR CATEDRATICO              | 23 865.03       | 25.06            | 399                   |
+| PROFESOR EDUCACION SUPERIOR       | 8 584.62        | 11.02            | 49                    |
+| PROFESOR EXBECARIO                | 13 440.51       | 10.69            | 94                    |
+| PROFESOR INSTRUCTOR               | 10 150.55       | 15.48            | 787                   |
+| PROFESOR INTERINO                 | 8 514.06        | 11.55            | 478                   |
+| PROFESOR INTERINO BACHILLER       | 3 284.72        | 1.35             | 87                    |
+| PROFESOR INTERINO LICENCIADO      | 5 164.01        | 5.53             | 2783                  |
+| PROFESOR INTERINO SIN TITULO      | 3 511.35        | 6.71             | 7                     |
+| PROFESOR PROFESOR SEP CONTRACTUAL | 2 245.58        | 1.00             | 14                    |
+| PROFESOR VISITANTE                | 10 812.62       | 7.90             | 83                    |
 ## Data Visualization 
 
 

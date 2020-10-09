@@ -82,6 +82,7 @@ Mean of tier of employees
 | PROFESOR PROFESOR SEP CONTRACTUAL | 2 245.58        | 1.00             | 14                    |
 | PROFESOR VISITANTE                | 10 812.62       | 7.90             | 83                    |
 ## Data Visualization 
-
+## Data Visualization 
+![Graph1](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/Images/graph1.png)
 
 ## Final Remarks

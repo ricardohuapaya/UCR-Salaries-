@@ -82,7 +82,14 @@ Mean of tier of employees
 | PROFESOR PROFESOR SEP CONTRACTUAL | 2 245.58        | 1.00             | 14                    |
 | PROFESOR VISITANTE                | 10 812.62       | 7.90             | 83                    |
 ## Data Visualization 
-## Data Visualization 
+### Data Comprehension
+As we can see in the first plot and second plot is that we can understand how they are the employees distributed by type of work schedule and amount of years worked for the insitution.
+We can understan that the mayority of the population works full time for the University.
+
 ![Graph1](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/Images/graph1.png)
+
+![Graph2](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/Images/graph2.png)
+
+![Graph3](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/Images/Figure%202020-10-08%20204128%20(2).png)
 
 ## Final Remarks

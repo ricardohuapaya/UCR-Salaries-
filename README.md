@@ -105,5 +105,5 @@ If we now focus on proffesors of Universidad de Costa Rica we can now see, in gr
 
 In a similar maner the value of hour of work holds the concentration of data under reltiva low number 20 thousand colones, but again the professor type "CATEDRATICO" matains a sysmetrical distribution with 50% of the data between 20 and 30 thousand colones. 
 
-![Graph6h](ttps://github.com/ricardohuapaya/UCR-Salaries-/blob/master/Images/Figure%202020-10-08%20204128%20(7).png)
+![Graph6](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/Images/Figure%202020-10-08%20204128%20(7).png)
 ## Final Remarks

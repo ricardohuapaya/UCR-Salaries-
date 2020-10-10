@@ -5,7 +5,23 @@ The main objective of this program is to properly understand how the Universidad
 All the data it's collected from the official [webpage](https://transparencia.ucr.ac.cr/), the dataset was downloaded as a CSV file that contains the payroll for each month. For this project, we are going to be working with the payroll for August 2020.
 
 ## Data Cleaning
-We take the information given by the university and we procede to understand the first distributions of salaries. 
+We take the information given by the university and we proceed to understand the first distributions of salaries. 
+
+We are going to be focusing on four variables: ```position```, which gives us the position held at the university for each employee; ```salary```, which tells us the salary before taxes in colones for each employee; ```hours```; which details us the type of schedule and ```years``` that sums the total years worked in the university.
+
+To better understand the ```salary```  variable we extract the ```salary_per_hour``` of work, in this case, we assume that each month has 4.34524 weeks, then we divide the salary in the number of weeks and the number of hours worked each week depending on the worker's schedule.
+
+``` python
+df['Salary_per_hour'] = df.salary/4.34524
+df.loc[df['hours']=='Full time', 'Salary_per_hour'] = df.Salary_per_hour/40 
+df.loc[df['hours']=='7/8 of time', 'Salary_per_hour'] = df.Salary_per_hour/(40*7/8) 
+df.loc[df['hours']=='3/4 of time', 'Salary_per_hour'] = df.Salary_per_hour/(40*6/8)
+df.loc[df['hours']=='5/8 of time', 'Salary_per_hour'] = df.Salary_per_hour/(40*5/8) 
+df.loc[df['hours']=='Part Time', 'Salary_per_hour'] = df.Salary_per_hour/(40*4/8)
+df.loc[df['hours']=='3/8 of time', 'Salary_per_hour'] = df.Salary_per_hour/(40*3/8)
+df.loc[df['hours']=='1/4 of  time', 'Salary_per_hour'] = df.Salary_per_hour/(40*2/8)
+df.loc[df['hours']=='1/8  of time', 'Salary_per_hour'] = df.Salary_per_hour/(40*1/8)
+```
 
 ## Data Summary
 

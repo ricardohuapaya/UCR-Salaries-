@@ -111,13 +111,13 @@ Graphs 3 and 4 show an interesting relation between the salary, value of an hour
 
 On the other hand, graph 4 shows that for most employees the value of an hour of work is under 10 thousand colones.
 
-![Graph4](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/images/Figure%202020-10-08%20204128%20(3).png)
+![Graph4](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/images/Figure%202020-10-09%20215917%20(3).png)
 
 If we now focus only on the professors from Universidad de Costa Rica we can now see, in graph 5, that the concentration of salaries is under 3 million colones. Nonetheless, the type of professor called "CATEDRADICO", which can be interpreted as a professor that can hold the chair of a course, has a fairly symmetrical distribution with 50% of the salaries in between 3-5 million colones.
 
-![Graph5](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/images/Figure%202020-10-08%20204128%20(4).png)
+![Graph5](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/images/Figure%202020-10-09%20215917%20(4).png)
 
 Similarly, the value of hours of work holds the concentration of data under a relatively low number of 20 thousand colones, but again the professor type "CATEDRATICO" maintains a symmetrical distribution with 50% of the data between 20 and 30 thousand colones.
 
-![Graph6](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/images/Figure%202020-10-08%20204128%20(5).png)
+![Graph6](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/images/Figure%202020-10-09%20215917%20(5).png)
 ## Final Remarks

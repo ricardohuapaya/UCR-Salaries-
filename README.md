@@ -30,9 +30,9 @@ df.loc[df['hours']=='1/8  of time', 'Salary_per_hour'] = df.Salary_per_hour/(40*
 |----------|-------------------------------|------------------|
 | Min      | 0.006712                      | 0                |
 | Max      | 9.891736                      | 56               |
-| Mean     | 1.057374                      | 12.55            |
-| Median   | 1.720855                      | 11               |
-| Skewness | 1.30                          | 0.78             |
+| Mean     | 1.306981                      | 12.55            |
+| Median   | 1.057817                      | 11               |
+| Skewness | 1.71                          | 0.78             |
 
 
 **Summary:** Salary in Millons of colones and Years of Service; for _all professors_.
@@ -41,11 +41,12 @@ df.loc[df['hours']=='1/8  of time', 'Salary_per_hour'] = df.Salary_per_hour/(40*
 |----------|-------------------------------|------------------|
 | Min      | 0.006712                      | 0                |
 | Max      | 9.891736                      | 56               |
-| Mean     | 1.144469                       | 10.38            |
-| Median   | 0.623217                     | 8               |
-| Skewness |  1.78                           | 1.13             |
+| Mean     | 1.144469                      | 10.38            |
+| Median   | 0.623217                      | 8                |
+| Skewness |  1.78                         | 1.13             |
 
-Mean of tier of employees
+For the next segment of the summary we are going to see the mean for the salary per hour and the years of services of each group of worker. 
+Adding a column that summs up the total number of employees.
 
 **Tier One**
 
@@ -113,7 +114,7 @@ On the other hand, graph 4 shows that for most employees the value of an hour of
 
 ![Graph4](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/images/Figure%202020-10-09%20215917%20(3).png)
 
-If we now focus only on the professors from Universidad de Costa Rica we can now see, in graph 5, that the concentration of salaries is under 3 million colones. Nonetheless, the type of professor called "CATEDRADICO", which can be interpreted as a professor that can hold the chair of a course, has a fairly symmetrical distribution with 50% of the salaries in between 3-5 million colones.
+If we now focus only on the professors from Universidad de Costa Rica we can now see, in graph 5, that the concentration of salaries is under 3 million colones. Nonetheless, the type of professor called "CATEDRATICO", which can be interpreted as a professor that can hold the chair of a course, has a fairly symmetrical distribution with 50% of the salaries in between 3-5 million colones.
 
 ![Graph5](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/images/Figure%202020-10-09%20215917%20(4).png)
 

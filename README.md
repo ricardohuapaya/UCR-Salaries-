@@ -103,7 +103,7 @@ From the first and second plots, we can understand how the employees are distrib
 
 ![Graph1](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/images/Figure%202020-10-09%20215917.png)
 
-![Graph2](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/images/Figure%202020-10-09%20215917%20(1).pngg)
+![Graph2](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/images/Figure%202020-10-09%20215917%20(1).png)
 
 Graphs 3 and 4 show an interesting relation between the salary, value of an hour of work, and type of schedule, in the case of the variable salary in millions of colones the majority of the salaries are under 2 million colones. And if we focus only on full-time workers, the concentration of data is also under two million.
 

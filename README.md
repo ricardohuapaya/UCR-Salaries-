@@ -55,7 +55,7 @@ Mean of tier of employees
 | PROFESIONAL B           | 12 177.31       | 15.17            | 347                   |
 | PROFESIONAL C           | 14 607.70        | 17.35            | 251                   |
 | PROFESIONAL D           | 17 937.24        | 21.71            | 32                    |
-| TECNICO ASISTENCIAL A   | 53 18.93         | 12.19            | 478                   |
+| TECNICO ASISTENCIAL A   | 5 318.93         | 12.19            | 478                   |
 | TECNICO ASISTENCIAL B   | 6 204.86         | 14.22            | 452                   |
 | TECNICO ESPECIALIZADO A | 6 582.37         | 14.72            | 84                    |
 | TECNICO ESPECIALIZADO B | 6 914.99         | 14.84            | 422                   |
@@ -81,15 +81,29 @@ Mean of tier of employees
 | PROFESOR INTERINO SIN TITULO      | 3 511.35        | 6.71             | 7                     |
 | PROFESOR PROFESOR SEP CONTRACTUAL | 2 245.58        | 1.00             | 14                    |
 | PROFESOR VISITANTE                | 10 812.62       | 7.90             | 83                    |
+
 ## Data Visualization 
 ### Data Comprehension
-As we can see in the first plot and second plot is that we can understand how they are the employees distributed by type of work schedule and amount of years worked for the insitution.
-We can understan that the mayority of the population works full time for the University.
+As we can see in the first and second plot is that we can understand how they are the employees distributed by type of work schedule and amount of years worked for the insitution.
+We can understand that the mayority of the population works full time for the University. Also we can comprehend that even tho most of the employees from UCR have a tenure of  years, there are large parts of the population that surpass the 20 and 30 year mark. 
 
 ![Graph1](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/Images/graph1.png)
 
 ![Graph2](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/Images/graph2.png)
 
+Graphs 3 and 4 show and interesting relation between the salary, value of an hour of work and type of schedule, you can see that in in the case of the salary in millions of colones the majotiry if salaries are under 2 million. And if we focus only in the full time workers, the concentration of data is also under two million.
+
 ![Graph3](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/Images/Figure%202020-10-08%20204128%20(2).png)
 
+On the other hand, graph 4 shows that the for most employees is that the value of an hour of work is under 10 thounsand colones. 
+
+![Graph4](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/Images/Figure%202020-10-08%20204128%20(3).png)
+
+If we now focus on proffesors of Universidad de Costa Rica we can now see, in graph 5 that the concentration of salaries are under 3 million colones. Nonetheless the type of proffesor called as "CATEDRADICO" that can be intepreted as a professors that can hold th chair of a course have a fairly symetrical distribution with 50% of the salaries in between 3-5 million colones. 
+
+![Graph5](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/Images/Figure%202020-10-08%20204128%20(6).png)
+
+In a similar maner the value of hour of work holds the concentration of data under reltiva low number 20 thousand colones, but again the professor type "CATEDRATICO" matains a sysmetrical distribution with 50% of the data between 20 and 30 thousand colones. 
+
+![Graph6h](ttps://github.com/ricardohuapaya/UCR-Salaries-/blob/master/Images/Figure%202020-10-08%20204128%20(7).png)
 ## Final Remarks

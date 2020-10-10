@@ -1,16 +1,15 @@
 # Universidad de Costa Rica Salaries: an Exploratory Analysis.
 ## General Information
-The main objetive of this program is to properly understand how the Universidad de Costa Rica, a public and State fundened college, distribuites it's budget to the salaries paied to their employees.
-
+The main objective of this program is to properly understand how the Universidad de Costa Rica, a public and State-funded college, distributes its salaries to each worker.  Also, we focus on determining the relationship between the salaries, the number of years worked and the type of job and position held at the University. 
 ## Data
-All the data it's collected from the official University's [webpage](https://transparencia.ucr.ac.cr/).
+All the data it's collected from the official [webpage](https://transparencia.ucr.ac.cr/), the dataset was downloaded as a CSV file that contains the payroll for each month. For this project, we are going to be working with the payroll for August 2020.
 
 ## Data Cleaning
 We take the information given by the university and we procede to understand the first distributions of salaries. 
 
 ## Data Summary
 
-Summary of aggregate data of all the employees
+**Summary:** Salary in Millons of colones and Years of Service; for _all employees_.
 |          | Salary in Millions of colones | Years of service |
 |----------|-------------------------------|------------------|
 | Min      | 0.006712                      | 0                |
@@ -20,7 +19,7 @@ Summary of aggregate data of all the employees
 | Skewness | 1.30                          | 0.78             |
 
 
-Aggregagted Summary of Teachers
+**Summary:** Salary in Millons of colones and Years of Service; for _all professors_.
 
 |          | Salary in Millions of colones | Years of service |
 |----------|-------------------------------|------------------|
@@ -84,26 +83,25 @@ Mean of tier of employees
 
 ## Data Visualization 
 ### Data Comprehension
-As we can see in the first and second plot is that we can understand how they are the employees distributed by type of work schedule and amount of years worked for the insitution.
-We can understand that the mayority of the population works full time for the University. Also we can comprehend that even tho most of the employees from UCR have a tenure of  years, there are large parts of the population that surpass the 20 and 30 year mark. 
+From the first and second plots, we can understand how the employees are distributed by type of work schedule and the number of years worked for the institution. As is shown, the majority of the population works full time for the University; also, we can comprehend that even tho most of the employees from UCR have a tenure of years, there are large parts of the workers' population that surpass the 20 and 30-year mark.
 
 ![Graph1](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/Images/graph1.png)
 
 ![Graph2](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/Images/graph2.png)
 
-Graphs 3 and 4 show and interesting relation between the salary, value of an hour of work and type of schedule, you can see that in in the case of the salary in millions of colones the majotiry if salaries are under 2 million. And if we focus only in the full time workers, the concentration of data is also under two million.
+Graphs 3 and 4 show an interesting relation between the salary, value of an hour of work, and type of schedule, in the case of the variable salary in millions of colones the majority of the salaries are under 2 million colones. And if we focus only on full-time workers, the concentration of data is also under two million.
 
 ![Graph3](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/Images/Figure%202020-10-08%20204128%20(2).png)
 
-On the other hand, graph 4 shows that the for most employees is that the value of an hour of work is under 10 thounsand colones. 
+On the other hand, graph 4 shows that for most employees the value of an hour of work is under 10 thousand colones.
 
 ![Graph4](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/Images/Figure%202020-10-08%20204128%20(3).png)
 
-If we now focus on proffesors of Universidad de Costa Rica we can now see, in graph 5 that the concentration of salaries are under 3 million colones. Nonetheless the type of proffesor called as "CATEDRADICO" that can be intepreted as a professors that can hold th chair of a course have a fairly symetrical distribution with 50% of the salaries in between 3-5 million colones. 
+If we now focus only on the professors from Universidad de Costa Rica we can now see, in graph 5, that the concentration of salaries is under 3 million colones. Nonetheless, the type of professor called "CATEDRADICO", which can be interpreted as a professor that can hold the chair of a course, has a fairly symmetrical distribution with 50% of the salaries in between 3-5 million colones.
 
 ![Graph5](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/Images/Figure%202020-10-08%20204128%20(6).png)
 
-In a similar maner the value of hour of work holds the concentration of data under reltiva low number 20 thousand colones, but again the professor type "CATEDRATICO" matains a sysmetrical distribution with 50% of the data between 20 and 30 thousand colones. 
+Similarly, the value of hours of work holds the concentration of data under a relatively low number of 20 thousand colones, but again the professor type "CATEDRATICO" maintains a symmetrical distribution with 50% of the data between 20 and 30 thousand colones.
 
 ![Graph6](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/Images/Figure%202020-10-08%20204128%20(7).png)
 ## Final Remarks

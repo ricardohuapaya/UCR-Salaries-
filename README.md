@@ -5,7 +5,7 @@ The main objective of this program is to properly understand how the Universidad
 All the data it's collected from the official [webpage](https://transparencia.ucr.ac.cr/), the dataset was downloaded as a CSV file that contains the payroll for each month. For this project, we are going to be working with the payroll for August 2020.
 
 ## Data Cleaning
-We take the information given by the university and we proceed to understand the first distributions of salaries. 
+In this segment of the [program](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/DataClean.py), we take the information given by the university and we proceed to understand the first distributions of salaries. 
 
 We are going to be focusing on four variables: ```position```, which gives us the position held at the university for each employee; ```salary```, which tells us the salary before taxes in colones for each employee; ```hours```; which details us the type of schedule and ```years``` that sums the total years worked in the university.
 

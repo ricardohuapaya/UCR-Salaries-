@@ -1,6 +1,6 @@
 # Universidad de Costa Rica Salaries: an Exploratory Analysis.
 ## General Information
-The main objective of this program is to properly understand how the Universidad de Costa Rica, a public and State-funded college, distributes its salaries to each worker.  Also, we focus on determining the relationship between the salaries, the number of years worked and the type of job and position held at the University. 
+The main objective of this program is to properly understand how the Universidad de Costa Rica, a public and State-funded college, distributes its salaries to each worker. The isnpiration for this program comes from the day to day comments on how th University should spend its budget; as been the most common is that the Universities employees (and specifically profesors) earn _to much_ money. Also, we focus on determining the relationship between the salaries, the number of years worked and the type of job and position held at the University. 
 ## Data
 All the data it's collected from the official [webpage](https://transparencia.ucr.ac.cr/), the dataset was downloaded as a CSV file that contains the payroll for each month. For this project, we are going to be working with the payroll for August 2020.
 

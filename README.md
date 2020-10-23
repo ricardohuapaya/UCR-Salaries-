@@ -1,11 +1,18 @@
 # Universidad de Costa Rica Salaries: an Exploratory Analysis.
+
+**Go back to the [main :leftwards_arrow_with_hook: ](https://github.com/ricardohuapaya/Portafolio/blob/main/README.md)** 
+
+**Check the code:**
+
+- [:arrow_forward: DataClean.py ](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/DataClean.py)
+- [:arrow_forward: Exploratory.py](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/Exploratory.py)
 ## General Information
-The main objective of this program is to properly understand how the Universidad de Costa Rica, a public and State-funded college, distributes its salaries to each worker. The isnpiration for this program comes from the day to day comments on how th University should spend its budget; as been the most common is that the Universities employees (and specifically profesors) earn _to much_ money. Also, we focus on determining the relationship between the salaries, the number of years worked and the type of job and position held at the University. 
+The main objective of this program is to properly understand how the Universidad de Costa Rica, a public and State-funded college, distributes its salaries to each worker. The inspiration for this program comes from the day to day comments on how th University should spend its budget; as been the most commonly criticized that the University's employees (and specifically professors) earn _to much_ money. Also, we focus on determining the relationship between the salaries, the number of years worked and the type of job and position held at the University. 
 ## Data
-All the data it's collected from the official [webpage](https://transparencia.ucr.ac.cr/), the dataset was downloaded as a CSV file that contains the payroll for each month. For this project, we are going to be working with the payroll for August 2020.
+All the data it's collected from the official University's [webpage](https://transparencia.ucr.ac.cr/), the dataset was downloaded as a CSV file that contains the payroll for each month. For this project, we are going to be working with the payroll for August 2020.
 
 ## Data Cleaning
-In this segment of the [program](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/DataClean.py), we take the information given by the university and we proceed to understand the first distributions of salaries. 
+In this segment, we take the information given by the university and we proceed to understand the first distributions of salaries. 
 
 We are going to be focusing on four variables: ```position```, which gives us the position held at the university for each employee; ```salary```, which tells us the salary before taxes in colones for each employee; ```hours```; which details us the type of schedule and ```years``` that sums the total years worked in the university.
 

@@ -147,14 +147,12 @@ As we want to understand the relation better we proceded to do a linear regressi
 ![testdata](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/images/test_and_train_data.png)
 
 ## Final Remarks
-<<<<<<< HEAD
-After the code is run we end up with fair results, the linear regression model shows an  
+After the code is ran we end up with fair results, the linear regression model shows an  
 $$
 R^{2} =0.71
 $$ 
-=======
-After the code is run we end up with fair results, the linear regression model shows an  \(R^{2}\) of ```0.71```.
->>>>>>> 0b3543d1f127edc5555b0e6f01a049553c2dc01e
+
+Which gives us the nex plot
 
 ![linearregression](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/images/linear_regression.png)
 

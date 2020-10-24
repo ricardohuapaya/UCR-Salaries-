@@ -147,7 +147,10 @@ As we want to understand the relation better we proceded to do a linear regressi
 ![testdata](google.com)
 
 ## Final Remarks
-After the code is run we end up with fair results, the linear regression model shows an  $R^{2}$ of ```0.71```.
+After the code is run we end up with fair results, the linear regression model shows an  
+$$
+R^{2} =0.71
+$$ 
 
 ![linearregression](google.com)
 

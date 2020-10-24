@@ -5,7 +5,7 @@ import numpy as np
 
 #create a data frame with the data from UCR salaries information
 
-df = pd.read_csv('planilla-2020-08.csv', sep =';')
+df = pd.read_csv('data/planilla-2020-08.csv', sep =';')
 
 #%% Craeting Functions to then apply them in a pipe
 

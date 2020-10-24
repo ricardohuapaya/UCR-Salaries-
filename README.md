@@ -149,8 +149,7 @@ As we want to understand the relation better we proceded to do a linear regressi
 ## Final Remarks
 After the code is ran we end up with fair results, the linear regression model shows an  
 
-$$R^{2} =0.71$$ 
-
+![equation](https://www.codecogs.com/latex/eqneditor.php)
 Which gives us the nex plot
 
 ![linearregression](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/images/linear_regression.png)

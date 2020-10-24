@@ -148,6 +148,7 @@ As we want to understand the relation better we proceded to do a linear regressi
 
 ## Final Remarks
 After the code is ran we end up with fair results, the linear regression model shows an  
+
 $$
 R^{2} =0.71
 $$ 

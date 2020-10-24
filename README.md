@@ -3,21 +3,6 @@
 **Go back to the [main :leftwards_arrow_with_hook: ](https://github.com/ricardohuapaya/Portafolio/blob/main/README.md)** 
 
 **Check the code:**
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-tex2jax: {
-inlineMath: [['$','$'], ['\\(','\\)']],
-processEscapes: true},
-jax: ["input/TeX","input/MathML","input/AsciiMath","output/CommonHTML"],
-extensions: ["tex2jax.js","mml2jax.js","asciimath2jax.js","MathMenu.js","MathZoom.js","AssistiveMML.js", "[Contrib]/a11y/accessibility-menu.js"],
-TeX: {
-extensions: ["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"],
-equationNumbers: {
-autoNumber: "AMS"
-}
-}
-});
-</script>
 
 - [:arrow_forward: DataClean.py ](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/DataClean.py)
 - [:arrow_forward: Exploratory.py](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/Exploratory.py)
@@ -162,7 +147,7 @@ As we want to understand the relation better we proceded to do a linear regressi
 ![testdata](google.com)
 
 ## Final Remarks
-After the code is run we end up with fair results, the linear regression model shows an  $R^{2}$ of ```0.71```.
+After the code is run we end up with fair results, the linear regression model shows an  \(R^{2}\) of ```0.71```.
 
 ![linearregression](google.com)
 

@@ -140,16 +140,16 @@ As we saw in last two graph theres is an interesting relation between the positi
 
 And thus the scatter plot that compares the salary per hour earned and the years worked for the institution shows a fairly positive relations. 
 
-![Scatter](google.com)
+![Scatter](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/images/Salary_per_hour_scatter.png)
 
 As we want to understand the relation better we proceded to do a linear regression model using this data and the ```sklearn``` package. We also want to test our model and see how it fits out data, for this we do supervised training of the data and split into two. 
 
-![testdata](google.com)
+![testdata](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/images/test_and_train_data.png)
 
 ## Final Remarks
 After the code is run we end up with fair results, the linear regression model shows an  \(R^{2}\) of ```0.71```.
 
-![linearregression](google.com)
+![linearregression](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/images/linear_regression.png)
 
 This helps us conclude with two important remarks, the first one being that most salaries are pre-determined by the category of position held lets say for example the category of position as ```INTERINO``` vs ```CATEDRATICO``` shows that on side the first type of professors are related with professors that entered the job market or are hired per semester thus we conclude are only dedicated to teaching and not primarily doing research or gaining much academic experience, on the other hand, the second type shows a professors that probably has a PhD. or post-graduate degree, and probably dedicates large amount of time in doing or developing research. In a sense one has more market value than the other, and we see be presented in the boxplots charts. 
 

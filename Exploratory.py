@@ -119,26 +119,33 @@ ygu = sns.boxplot(x="position",
 plt.ylabel('Salary per hour')
 plt.xlabel('Job Title')
 
+
 #%% CORR
 corr = df.groupby('position')['salary_millions', 'years'].mean()
 plot_correlation = df_profe.loc[df_profe['position'].str.contains('CATEDRATICO|ASOCIADO|INTERINO|INSTRUCTOR', regex = True )]
 
 plt.figure(figsize=(12,6))
+plt.title('UCR Professors: Salary per hour and years worked')
 gig7 = sns.scatterplot(x="years",
                 y="Salary_per_hour",
                 size = 'position',
                 hue = 'position',
                 data= plot_correlation)
-plt.ylabel('test')
+plt.ylabel('Salary per hour in colones')
+plt.xlabel('Years Worked')
+
+
 #%%
-#Test train split for supervised
+#Test train split for supervised 
 X_train, X_test, y_train, y_test = train_test_split(plot_correlation['years'], plot_correlation['Salary_per_hour'])
 
 plt.figure(figsize=(12,6))
 hello = plt.scatter(X_train, y_train, label ='Training Data', color = 'darkslateblue', alpha=0.7)
 plt.scatter(X_test, y_test, label ='Testing Data', color = 'violet', alpha=0.7)
 plt.legend()
-plt.title('Test Train Split')
+plt.title('Slpit test and train data')
+plt.ylabel('Salary per hour in colones')
+plt.xlabel('Years Worked')
 plt.show()
 LR = LinearRegression()
 LR.fit(X_train.values.reshape(-1,1), y_train.values)
@@ -149,6 +156,9 @@ prediction = LR.predict(X_test.values.reshape(-1,1))
 plt.plot(X_test, prediction, label ='Linear Regression', color = 'indigo')
 plt.scatter(X_test, y_test, label='Actual test data', color ='violet', alpha =0.7)
 plt.legend()
+plt.title('UCR Professors linear regression: Salary per hour and years worked')
+plt.ylabel('Salary per hour in colones')
+plt.xlabel('Years Worked')
 plt.show
 
 print(LR.score(X_test.values.reshape(-1,1), y_test.values))

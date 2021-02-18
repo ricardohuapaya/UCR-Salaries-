@@ -52,7 +52,7 @@ df.loc[df['hours']=='1/8  of time', 'Salary_per_hour'] = df.Salary_per_hour/(40*
 | Median   | 0.623217                      | 8                |
 | Skewness |  1.78                         | 1.13             |
 
-For the next segment of the summary we are going to see the mean for the salary per hour and the mean of years of services f rom each group of workers. 
+For the next segment of the summary we are going to see the *mean* for the salary per hour and the *mean* of years of services from each group of workers. 
 Adding a column that sums up the total number of employees.
 
 **Tier One**
@@ -107,7 +107,7 @@ Adding a column that sums up the total number of employees.
 
 ## Data Visualization 
 ### Data Comprehension
-From the first and second plots, we can understand how the employees are distributed by type of work schedule and the number of years worked for the institution. As is shown, the majority of the population works full time for the University; also, we can comprehend that even tho most of the employees from UCR have a tenure of years, there are large parts of the workers' population that surpass the 20 and 30-year mark.
+From the first and second plots, we can understand how the employees are distributed by type of work schedule and the number of years worked for the institution. As is shown, the majority of the population works full time for the University; also, we can comprehend that even tho most of the employees from UCR have a tenure of between 0 and 10 years, and that there is a large parts of the workers' population that surpass the 20 and 30-year mark.
 
 ![Graph1](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/images/Figure%202020-10-09%20215917.png)
 
@@ -129,7 +129,7 @@ Similarly, the value of hours of work holds the concentration of data under a re
 
 ![Graph6](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/images/Figure%202020-10-09%20215917%20(5).png)
 
-As we saw in last two graph theres is an interesting relation between the position held and the years worked for the institution. We can take more advantage of this insight and show in the an scatter plot, for this particular case we will be using the first four categories for professors ```CATEDRATICO, INTERINO, ASOCIADO, INSTRUCTOR ```, the main reason is that this four categories hold the largest amount of data as is shown in the next table.
+As we saw in last two graphs theres is an interesting relation between the position held and the years worked for the institution. We can take more advantage of this insight and show it in the a scatter plot, for this particular case we will be using the first four categories for professors ```CATEDRATICO, INTERINO, ASOCIADO, INSTRUCTOR ```, the main reason is that this four categories hold the largest amount of data as is shown in the next table.
 
 |             | Number of Observations |
 |-------------|------------------------|
@@ -153,6 +153,10 @@ After the code is run we end up with fair results, the linear regression model s
 
 ![linearregression](https://github.com/ricardohuapaya/UCR-Salaries-/blob/master/images/linear_regression.png)
 
-This helps us conclude with two important remarks, the first one being that most salaries are pre-determined by the category of position held lets say for example the category of position as ```INTERINO``` vs ```CATEDRATICO``` shows that on side the first type of professors are related with professors that entered the job market or are hired per semester thus we conclude are only dedicated to teaching and not primarily doing research or gaining much academic experience, on the other hand, the second type shows a professors that probably has a PhD. or post-graduate degree, and probably dedicates large amount of time in doing or developing research. In a sense one has more market value than the other, and we see be presented in the boxplots charts. 
+This helps us conclude with two important remarks, the first one being that most salaries are pre-determined by the category of position held lets say for example the category of position as ```INTERINO``` vs ```CATEDRATICO``` shows that on side the first type of professors are related with professors that are entry level to the job market or are hired per semester thus we conclude are only dedicated to teaching and not primarily doing research or gaining much academic experience, on the other hand, the second type shows a professors that probably has a PhD. or post-graduate degree, and probably dedicates large amount of time in doing or developing research. In a sense one could more market value than the other, as we saw be presented in the boxplots charts. 
 
-The second remark is that there exists a fair positive relation between the amount of years worked for the institution and the salary earned. As we remember the first bar charts, there are large parts of the workers population that surpass the 20 30 and year marks. So this mainly the reason of why we see really high salaries been paid by the University.
+The second remark is, that there exists a fair positive relation between the amount of years worked for the institution and the salary earned. As we remember the firsts bar charts, there are large parts of the workers population that surpass the 20 30 and year marks. So this mainly the reason of why we see really high salaries been paid by the University.
+
+The next question that should be ask is the proper comparison with other international universities and there at the same academic level, and how can we determine the productivity of each professor.
+
+
